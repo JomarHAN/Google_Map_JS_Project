@@ -1,0 +1,137 @@
+*{}
+
+.marker-4 {
+    transform: translate(1029px, 111px);
+}
+
+.marker-3 {
+    transform: translate(1102px, 73px);
+}
+
+.marker-2 {
+    transform: translate(1100px, 30px);
+}
+
+.marker-1 {
+    transform: translate(1000px, 90px);
+}
+
+.marker-on-map i {
+    color: red;
+    font-size: 35px;
+}
+
+.marker-on-map {
+    position: absolute;
+    z-index: 10;
+}
+
+.phone {
+    font-weight: 800;
+    margin-top: 5px;
+    color: #464242;
+}
+
+.mark-num {
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.address {
+    font-weight: 800;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-des ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-des li {
+    list-style: none;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .25s ease;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.list-des li:hover {
+    box-shadow: 3px 2px 6px 0px;
+    transform: translate3d(-3px, -3px, 3px);
+}
+
+.list-des {
+    position: absolute;
+    z-index: 10;
+    top: 180px;
+    left: 100px;
+    width: 350px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map{
+    height: 100vh;
+}
+
+.title{
+    position: absolute;
+    top: 65px;
+    left: 100px;
+    z-index: 10;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    font-size: 40px;
+}
+
+.search-container{
+    width: 350px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+    border-radius: 50px;
+    top: 115px;
+    left: 100px;
+    border: 1px solid #333;
+    overflow: hidden;
+    display: flex;
+}
+
+.search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search input{
+    flex: 1;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.search input:focus {
+    outline: none;
+}
