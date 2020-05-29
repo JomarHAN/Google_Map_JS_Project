@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPIC STORE LOCATOR</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="js/store-data.js"></script>
+    
 </head>
 <body>
     <div class="title">Store Locator</div>
     <div class="search-container">
         <div class="search">
-            <input type="search" placeholder="Enter Zip" id="">
-            <i class="fa fa-search fa-flip-horizontal"></i>
+            <input type="search" placeholder="Enter Zip" id="zip-code">
+            <i class="fa fa-search fa-flip-horizontal" onclick="searchStores()"></i>
         </div>
     </div>
     <div class="list-des">
       <ul>
-        <li>
+        <!-- <li>
           <div class="row-1">
             <div class="address">
               <div class="suite">4576 Abernathy Farm Way</div>
@@ -57,40 +59,32 @@
             <div class="mark-num">4</div>
           </div>              
         </li>
-
+         -->
       </ul>
     </div>
-    <div class="marker-on-map">
-      <div class="marker-1">
-        <i class="fa fa-map-marker"></i>
-      </div>
-      <div class="marker-2">
-        <i class="fa fa-map-marker"></i>
-      </div>
-      <div class="marker-3">
-        <i class="fa fa-map-marker"></i>
-      </div>
-      <div class="marker-4">
-        <i class="fa fa-map-marker"></i>
-      </div>
-    </div>
+   <!-- <div class="window-info">
+     <h4 class="name">Jomar HA Nguyen</h4>
+     <div class="open-time">Until 5pm</div>
+     <hr>
+     <div class="address-link">
+       <div class="logo">
+        <i class="fa fa-location-arrow"></i>
+       </div> 
+      <div class="inside">3936 Abernathy FW</div>
+     </div>
+     <div class="contact">
+       <div class="logo">
+        <i class="fa fa-phone"></i>
+       </div>
+      <div class="inside">7706556322</div>
+     </div>
+   </div> -->
     
     <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-          var losAngeles = {
-              lat: 34.063380,
-              lng: -118.376354
-          }
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: losAngeles,
-          zoom: 8
-        });
-      }
+    <script src="js/index.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-IPWkrWiUHxMvmCi1mRebwHdppc7FH9k&callback=initMap" async defer>
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=<GOOGLE_API>&callback=initMap">
-    </script>
+
 </body>
 </html>

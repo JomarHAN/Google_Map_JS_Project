@@ -1,5 +1,72 @@
 *{}
 
+.search i {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+.gm-style-iw-d {
+    max-height: fit-content!important;
+}
+
+.inside {
+    font-size: 15px;
+    color: #5d5a5a;
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+
+.window-info hr {
+    margin: 5px 0;
+    border: 0.5px solid #cac6c6;
+}
+
+.open-time {
+    font-size: 15px;
+    color: #bcb6b6fc;
+    font-weight: bold;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.address-link, .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-link {
+    margin-bottom: 5px;
+}
+
+h4.name {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.window-info {
+    left: 500px;
+    background-color: white;
+    border-radius: 15px;
+    transition: .2s;
+    width: 300px;
+}
+
 .marker-4 {
     transform: translate(1029px, 111px);
 }
@@ -54,8 +121,27 @@
 }
 
 .list-des ul {
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    height: 430px;
+    width: 365px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.list-des ul::-webkit-scrollbar {
+    overscroll-behavior: auto;
+    width: 5px;
+}
+
+.list-des ul::-webkit-scrollbar-track {
+    background: #e7e7e770;
+}
+
+.list-des ul::-webkit-scrollbar-thumb {
+    border: 3px solid gray;
+    background: gray;
+    border-radius: 25px;
 }
 
 .list-des li {
